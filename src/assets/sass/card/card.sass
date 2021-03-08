@@ -1,0 +1,51 @@
+.card
+	&__inner
+		border: 1px solid #9dd3e4
+		background: #9dd3e4
+		border-radius: 5px
+		margin-bottom: 5px
+		display: flex
+		height: 150px
+		>:not(:last-child)
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 10px
+			border-right: 1px solid #000
+	
+	&__id
+		min-width: 50px
+	
+	&__name
+		min-width: 250px
+
+	&__img
+		img
+			width: 100px
+			height: 100px
+			object-fit: contain
+
+	&__description
+		flex: 1 1 100%
+		font-size: 0.7rem
+
+	&__tips
+		width: 550px
+		font-size: 0.7rem
+	
+	&__btn
+		display: flex
+		flex-direction: column
+		padding: 5px
+		>:nth-child(1n+1)
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 5px
+			width: 100%
+			border-radius: 2px
+			cursor: pointer
+			background: #4dacc9
+		>:not(:last-child)
+			margin-bottom: 15px
+
